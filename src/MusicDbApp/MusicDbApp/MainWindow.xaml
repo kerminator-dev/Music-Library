@@ -52,17 +52,19 @@
                       Margin="0 0 10 0"
                       ItemTemplate="{StaticResource GroupTemplate}"
                       ItemsSource="{Binding Groups, Mode=OneWay}"
-        
+                      BorderThickness="0"
                       SelectedItem="{Binding SelectedGroup}"/>
             <ListView Grid.Row="1" Grid.Column="1"
                       Name="AlbumsListBox"
                       Margin="0 0 10 0"
                       ItemTemplate="{StaticResource GroupTemplate}"
                       ItemsSource="{Binding Albums, Mode=OneWay}"
+                      BorderThickness="0"
                       SelectedItem="{Binding SelectedAlbum}"/>
             <ListView Grid.Row="1" Grid.Column="2"
                       Name="SongsListBox"
                       DisplayMemberPath="Name"
+                      BorderThickness="0"
                       ItemsSource="{Binding Songs, Mode=OneWay}"/>
         </Grid>
     </Border>
